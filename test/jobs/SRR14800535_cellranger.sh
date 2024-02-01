@@ -23,8 +23,8 @@ python /scratch/user/s4543064/Xiaohan_Summer_Research/test/make_meta.py --folder
 cp /QRISdata/Q6104/Xiaohan/1_Datasets/PRJNA737188/SRR14800535_1.fastq /QRISdata/Q6104/Xiaohan/1_Datasets/PRJNA737188/SRR14800535_S1_L001_R1_001.fastq 
 cp /QRISdata/Q6104/Xiaohan/1_Datasets/PRJNA737188/SRR14800535_2.fastq /QRISdata/Q6104/Xiaohan/1_Datasets/PRJNA737188/SRR14800535_S1_L001_R2_001.fastq 
 
-gzip /path/to/SRR14800535_S1_L001_R1_001.fastq 
-gzip /path/to/SRR14800535_S1_L001_R2_001.fastq 
+gzip /QRISdata/Q6104/Xiaohan/1_Datasets/PRJNA737188/SRR14800535_S1_L001_R1_001.fastq  
+gzip /QRISdata/Q6104/Xiaohan/1_Datasets/PRJNA737188/SRR14800535_S1_L001_R2_001.fastq  
 
 rsync -azvhP --no-perms --no-owner --no-group /QRISdata/Q6104/Xiaohan/1_Datasets/PRJNA737188/SRR14800535_*.fastq.gz $TMPDIR/fastq/SRR14800535/
 # run cellranger
