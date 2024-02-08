@@ -6,9 +6,6 @@ Please delete this section and replace it with your own if you are using this te
 
 ## File information
 
-It would be good to annotate here what each notebook was used for. For example, if you have a notebook called `01_data_cleanup.ipynb`, you can write a short description of what it is here. 
+When analysing datasets with txt files, use GSE70630 as template notebook.
 
-```
-01_data_cleanup.ipynb: cleans up the data and prepares it for analysis. Includes celltype annotation and QC. Haven't done the clustering yet.
-02_clustering.ipynb: clusters the data using the Louvain algorithm
-```
+When analysing datasets with barcodes/genes/matrix files, use GSE162454 as template notebook.
