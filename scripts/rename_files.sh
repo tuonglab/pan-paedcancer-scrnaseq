@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Directory containing the files
-input_dir="/scratch/user/s4543064/Xiaohan_Summer_Research/data/test"
+input_dir="/scratch/user/s4543064/xiaohan-john-project/data/ACCESSION_CODE"
 
 # Create directories for each sample and move corresponding files
 for file in "${input_dir}"/*_barcodes.tsv; do
