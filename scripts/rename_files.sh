@@ -5,7 +5,7 @@ input_dir="/scratch/user/s4543064/xiaohan-john-project/data/ACCESSION_CODE"
 
 # Create directories for each sample and move corresponding files
 for file in "${input_dir}"/*_barcodes.tsv; do
-    sample=$(basename "${file}" | cut -d'_' -f1,2)
+    sample=$(basename "${file}" | cut -d'_' -f1,2) # modify the fields for your dataset!!!!!!!
     mkdir -p "${input_dir}/${sample}"
     mv "${input_dir}/${sample}"_* "${input_dir}/${sample}/"
 done
