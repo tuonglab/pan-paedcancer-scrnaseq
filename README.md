@@ -1,12 +1,8 @@
-# Tuong group onboarding
+# Project plan
 
-Please head on over to our [lab wiki](https://github.com/tuonglab/tuonglab/wiki) first (Note: You will need to have a GitHub account and your account needs to be added to the tuonglab GitHub organisation).
+Title: Curating single-cell RNA sequencing data of paediatric cancers for metadataset construction
 
-Please take a look at the uploaded [pdf](slides/TuongLab_notebook_managements.pdf)/[powerpoint](slides/TuongLab_notebook_managements.pptx) within the `slides` folder for instructions.
-
-This repo also functions as a template for folder structures for projects. Please use this as a template for your own projects.
-
-If you are using this template, please delete this section and replace it with your own.
+We have collected 54 paediatric cancer datasets and we aim to integrate them to build a metadataset.
 
 ## Folder structure
 
