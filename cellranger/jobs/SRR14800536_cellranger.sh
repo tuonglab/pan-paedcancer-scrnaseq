@@ -21,12 +21,20 @@ mkdir $TMPDIR/fastq/SRR14800536
 # make the meta.csv files for running cellranger
 # python /scratch/user/s4543064/Xiaohan_Summer_Research/test/scripts/make_meta.py --folder $TMPDIR --sample SRR14800536
 
-cp /QRISdata/Q6104/Xiaohan/1_Datasets/PRJNA737188/SRR14800536_1.fastq /QRISdata/Q6104/Xiaohan/1_Datasets/PRJNA737188/SRR14800536_S1_L001_R1_001.fastq 
-echo 'I have created the SRR14800536_S1_L001_R1_001.fastq file'
-cp /QRISdata/Q6104/Xiaohan/1_Datasets/PRJNA737188/SRR14800536_2.fastq /QRISdata/Q6104/Xiaohan/1_Datasets/PRJNA737188/SRR14800536_S1_L001_R2_001.fastq 
-echo 'I have created the SRR14800536_S1_L001_R2_001.fastq file'
+# cp /QRISdata/Q6104/Xiaohan/1_Datasets/PRJNA737188/SRR14800536_1.fastq /QRISdata/Q6104/Xiaohan/1_Datasets/PRJNA737188/SRR14800536_S1_L001_R1_001.fastq 
+# echo 'I have created the SRR14800536_S1_L001_R1_001.fastq file'
+# cp /QRISdata/Q6104/Xiaohan/1_Datasets/PRJNA737188/SRR14800536_2.fastq /QRISdata/Q6104/Xiaohan/1_Datasets/PRJNA737188/SRR14800536_S1_L001_R2_001.fastq 
+# echo 'I have created the SRR14800536_S1_L001_R2_001.fastq file'
 
-rsync -azvhP --no-perms --no-owner --no-group /QRISdata/Q6104/Xiaohan/1_Datasets/PRJNA737188/SRR14800536_*.fastq $TMPDIR/fastq/SRR14800536/
+echo "I'm zipping SRR14800536_S1_L001_R1_001.fastq"
+gzip /QRISdata/Q6104/Xiaohan/1_Datasets/PRJNA737188/SRR14800536_S1_L001_R1_001.fastq  
+echo "DONE: SRR14800536_S1_L001_R1_001.fastq.gz"
+
+echo "I'm zipping SRR14800536_S1_L001_R2_001.fastq"
+gzip /QRISdata/Q6104/Xiaohan/1_Datasets/PRJNA737188/SRR14800536_S1_L001_R2_001.fastq 
+echo "DONE: SRR14800536_S1_L001_R2_001.fastq.gz"
+
+rsync -azvhP --no-perms --no-owner --no-group /QRISdata/Q6104/Xiaohan/1_Datasets/PRJNA737188/SRR14800536_*.fastq.gz $TMPDIR/fastq/SRR14800536/
 # run cellranger
 cellranger count --id=SRR14800536 \
        --transcriptome=/home/s4543064/refdata-gex-GRCh38-2020-A \
