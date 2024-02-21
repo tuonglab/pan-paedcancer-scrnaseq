@@ -20,6 +20,7 @@ mkdir $TMPDIR/fastq/SRR14800535
 
 # make the meta.csv files for running cellranger
 # python /scratch/user/s4543064/xiaohan-john-project/cellranger/make_meta.py --folder $TMPDIR --sample SRR14800535
+
 # cp /QRISdata/Q6104/Xiaohan/1_Datasets/PRJNA737188/SRR14800535_1.fastq /QRISdata/Q6104/Xiaohan/1_Datasets/PRJNA737188/SRR14800535_S1_L001_R1_001.fastq 
 # echo 'I have created the SRR14800535_S1_L001_R1_001.fastq file'
 # cp /QRISdata/Q6104/Xiaohan/1_Datasets/PRJNA737188/SRR14800535_2.fastq /QRISdata/Q6104/Xiaohan/1_Datasets/PRJNA737188/SRR14800535_S1_L001_R2_001.fastq 
