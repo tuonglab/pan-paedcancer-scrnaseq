@@ -24,6 +24,7 @@ else
         gunzip "$dataset_dir"/*.gz | rm *.gz
     else 
         echo "It may be txt type"
+        exit 1 # indicate an "error"
     fi
 fi 
 
