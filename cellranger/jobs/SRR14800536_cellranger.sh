@@ -27,7 +27,7 @@ mkdir $TMPDIR/fastq/SRR14800536
 # echo 'I have created the SRR14800536_S1_L001_R2_001.fastq file'
 
 echo "I'm zipping SRR14800536_S1_L001_R1_001.fastq"
-gzip /QRISdata/Q6104/Xiaohan/1_Datasets/PRJNA737188/SRR14800536_S1_L001_R1_001.fastq  
+gzip /QRISdata/Q6104/Xiaohan/1_Datasets/PRJNA737188/SRR14800536_S1_L001_R1_001.fastq
 echo "DONE: SRR14800536_S1_L001_R1_001.fastq.gz"
 
 echo "I'm zipping SRR14800536_S1_L001_R2_001.fastq"
