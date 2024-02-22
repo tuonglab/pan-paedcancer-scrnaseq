@@ -2,9 +2,13 @@
 
 accession_code="GSE235063"
 data_dir="/scratch/user/s4543064/xiaohan-john-project/data"
-dataset_dir="$data_dir/$accession_code"
+write_dir="/scratch/user/s4543064/xiaohan-john-project/write"
+
+dataset_dir="$data_dir/$accession_code" # where the dataset is downloaded to
+output_dir="$write_dir/$accession_code" # where the AnnData objects are stored
 
 mkdir $dataset_dir
+mkdir $output_dir
 
 # Download the dataset from GEO
 wget -e robots=off -nH -nd \
