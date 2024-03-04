@@ -28,10 +28,10 @@ else
 fi 
 
 # Create directories for each sample and move corresponding files
-for file in "${dataset_dir}"/*_barcodes.tsv.gz; do
-    sample=$(basename "${file}" | cut -d'_' -f1,2) # modify the fields for your dataset!!!!!!!
+for file in "${dataset_dir}"/*_barcodes*; do
+    sample=$(basename "${file}" | sed 's/_barcodes.*//') # dot . represents any single char and * indicates any occurrence time
     mkdir -p "${dataset_dir}/${sample}"
-    mv "${dataset_dir}/${sample}"_* "${dataset_dir}/${sample}/"
+    mv ${dataset_dir}/${sample}_* ${dataset_dir}/${sample}
 done
 
 # Remove prefix from files within each sample directory
