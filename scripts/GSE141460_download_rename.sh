@@ -32,18 +32,13 @@ else
     fi
 fi 
 
-# Create directories for each sample and move corresponding files
-for file in "${dataset_dir}"/*_barcodes*; do
-    sample=$(basename "${file}" | sed 's/_barcodes.*//') # dot . represents any single char and * indicates any occurrence time
-    mkdir -p "${dataset_dir}/${sample}"
-    mv ${dataset_dir}/${sample}_* ${dataset_dir}/${sample}
-done
+### The dataset includes a .tar.gz file for each sample
 
-# Remove prefix from files within each sample directory
-for sample_dir in "${dataset_dir}"/*; do
-    sample=$(basename "${sample_dir}")
-    for file in "${sample_dir}"/*; do
-        file_name=$(basename "${file}" | sed "s/${sample}_//")
-        mv "${file}" "${sample_dir}/${file_name}"
-    done	
+# Create directories for each sample and move corresponding files
+for tar_file in "${dataset_dir}"/*; do
+    sample=$(basename "${tar_file}" | sed 's/_10X.tar.gz//') # dot . represents any single char and * indicates any occurrence time
+    echo ${tar_file}
+    mkdir -p "${dataset_dir}/${sample}"
+    tar -xvf  ${tar_file} -C "${dataset_dir}/${sample}" --strip-components=1
+    rm ${tar_file}
 done
