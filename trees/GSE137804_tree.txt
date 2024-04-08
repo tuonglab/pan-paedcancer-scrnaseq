@@ -1,0 +1,27 @@
+[
+  {"type":"directory","name":"data/GSE137804_RAW","contents":[
+    {"type":"file","name":"GSM4088774_T10_gene_cell_exprs_table.xls.gz"},
+    {"type":"file","name":"GSM4088775_T19_gene_cell_exprs_table.xls.gz"},
+    {"type":"file","name":"GSM4088776_T27_gene_cell_exprs_table.xls.gz"},
+    {"type":"file","name":"GSM4088777_T34_gene_cell_exprs_table.xls.gz"},
+    {"type":"file","name":"GSM4088778_T40_gene_cell_exprs_table.xls.gz"},
+    {"type":"file","name":"GSM4088779_T44_gene_cell_exprs_table.xls.gz"},
+    {"type":"file","name":"GSM4088780_T69_gene_cell_exprs_table.xls.gz"},
+    {"type":"file","name":"GSM4088781_T71_gene_cell_exprs_table.xls.gz"},
+    {"type":"file","name":"GSM4088782_T75_gene_cell_exprs_table.xls.gz"},
+    {"type":"file","name":"GSM4088783_T92_gene_cell_exprs_table.xls.gz"},
+    {"type":"file","name":"GSM4088785_F2_gene_cell_exprs_table.xls.gz"},
+    {"type":"file","name":"GSM4088786_F7_gene_cell_exprs_table.xls.gz"},
+    {"type":"file","name":"GSM4088787_F106_gene_cell_exprs_table.xls.gz"},
+    {"type":"file","name":"GSM4088788_F107_gene_cell_exprs_table.xls.gz"},
+    {"type":"file","name":"GSM4654667_F366_gene_cell_exprs_table.xls.gz"},
+    {"type":"file","name":"GSM4654668_F379_gene_cell_exprs_table.xls.gz"},
+    {"type":"file","name":"GSM4654669_T162_gene_cell_exprs_table.xls.gz"},
+    {"type":"file","name":"GSM4654670_T175_gene_cell_exprs_table.xls.gz"},
+    {"type":"file","name":"GSM4654671_T188_gene_cell_exprs_table.xls.gz"},
+    {"type":"file","name":"GSM4654672_T200_gene_cell_exprs_table.xls.gz"},
+    {"type":"file","name":"GSM4654673_T214_gene_cell_exprs_table.xls.gz"},
+    {"type":"file","name":"GSM4654674_T230_gene_cell_exprs_table.xls.gz"}
+  ]},
+  {"type":"report","directories":0,"files":22}
+]

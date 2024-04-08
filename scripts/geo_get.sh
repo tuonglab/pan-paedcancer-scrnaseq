@@ -1,5 +1,6 @@
 #!/bin/bash
 
+# From project root
 # Usage: bash scripts/geo_get.sh GSE123456
 
 accession_code=$1
