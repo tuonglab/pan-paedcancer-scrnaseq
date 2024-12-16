@@ -2,11 +2,12 @@
 
 This directory contains the jupyter notebooks used in the projects.
 
-## File information
+## Folder structure
 
-```
-DATASET_ACCESSION_CODE: creates the AnnData obejects for the dataset 
-template_txt: the template notebook when analysing datasets with txt files
-template_genes: the template notebook when analysing datasets with barcodes/genes/matrix files
-template_features: the template notebook when analysing datasets with barcodes/features/matrix files
+```bash
+repo_name/
+├── notebooks/ 
+│   ├── 01_count_matrix_generation/ # extract count matrices from each available scRNA-seq dataset
+│   ├── 02_meta_analysis/ # construct a pan-paedcancer single-cell atlas
+├── scripts/
 ```

@@ -7,7 +7,7 @@ We have collected 47 paediatric cancer datasets and we aim to integrate them to 
 ## Folder structure
 
 ```bash
-repo_name/
+pan-paedcancer-scrnaseq/
 ├── notebooks/ 
 │   ├── 01_count_matrix_generation/ # extract count matrices from each available scRNA-seq dataset
 │   ├── 02_meta_analysis/ # construct a pan-paedcancer single-cell atlas
