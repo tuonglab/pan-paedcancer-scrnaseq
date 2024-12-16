@@ -1,15 +1,15 @@
 # Project plan
 
-Title: Curating single-cell RNA sequencing data of paediatric cancers for metadataset construction
+Title: Curating scRNA-seq data of paediatric cancers for pan-paedcancer atlas construction
 
-We have collected 47 paediatric cancer datasets and we aim to integrate them to build a metadataset.
+We have collected 47 paediatric cancer datasets and we aim to integrate them to build an atlas.
 
 ## Folder structure
 
 ```bash
 repo_name/
-├── figures/ # any file changes are ignored by github
-├── notebooks/
+├── notebooks/ 
+│   ├── 01_count_matrix_generation/ # extract count matrices from each available scRNA-seq dataset
+│   ├── 02_meta_analysis/ # construct a pan-paedcancer single-cell atlas
 ├── scripts/
-├── write/ # any file changes are ignored by github
 ```
